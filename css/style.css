@@ -1,0 +1,502 @@
+/*=====================
+    common scss 
+======================*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.clr {
+    clear: both;
+}
+
+p {
+    margin: 0;
+}
+
+.clr {
+    clear: both;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+.text-green {
+    color: #27AE60 !important;
+}
+
+.border-green {
+    border-color: #27AE60 !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*question part css */
+#question {
+    background-color: #E1E3EB;
+    height: 100vh;
+}
+
+/*user-bar part css*/
+#question .user-bar {
+    width: 100px;
+    padding: 45px 25px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.user-profile {
+    margin-bottom: 110px;
+}
+
+.user-profile::after {
+    bottom: 3px;
+    right: 3px;
+    width: 10px;
+    height: 10px;
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    background: #3CD856;
+}
+
+.user-icon {
+    padding: 15px 0;
+}
+
+.user-icon a i {
+    width: 48px;
+    height: 48px;
+    line-height: 45px;
+    border-radius: 8px;
+
+}
+
+.user-icon a:hover i {
+    background: #F0F7FF;
+}
+
+.user-icon .active {
+    position: relative;
+}
+
+.user-icon .active::after {
+    top: 0;
+    left: -32px;
+    width: 15px;
+    content: '';
+    height: 100%;
+    position: absolute;
+    border-radius: 8px;
+    background: #0077FF;
+}
+
+.user-icon .active i {
+    background: #F0F7FF;
+}
+
+/*header bar part css*/
+.content-header {
+    border-radius: 8px;
+}
+
+.content-header-text {
+    font-size: 24px;
+}
+
+.content-logout .btn span {
+    padding: 3px;
+    border-radius: 50%;
+    background: #006BE4;
+}
+
+/*timer part css*/
+.timer {
+    font-size: 18px;
+}
+
+.timer span {
+    font-weight: 600;
+
+}
+
+/*question box part css*/
+.question-box {
+    padding-top: 35px;
+    border-radius: 8px;
+    padding-bottom: 35px;
+}
+
+.name-question h4 {
+    color: #151D48;
+    font-size: 20px;
+}
+
+.topic-question ul {
+    color: #444A6D;
+    font-size: 18px;
+    padding-left: 110px;
+}
+
+.choose-question ul {
+    padding-left: 110px;
+}
+
+.wrong-answer a::after {
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: #0077FF;
+}
+
+.close-icon,
+.right-icon {
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+}
+
+.choose-question ul li a label {
+    width: 35px;
+    height: 35px;
+    color: #151D48;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #444A6D;
+}
+
+.next-previews-btn {
+    padding-top: 30px;
+}
+
+.next-previews-btn .btn {
+    width: 200px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+/*performence-summary part css*/
+.performence-summary {
+    border-radius: 16px;
+}
+
+.pause-stop {
+    border-radius: 16px;
+    box-shadow: 0px 5px 10px -3px #0077FF1A;
+}
+
+.pause-stop .btn-pause {
+    color: #FFA412;
+    font-weight: 600;
+    border-radius: 8px;
+    background: #FEF6E6;
+}
+
+.pause-stop .btn-pause span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #FFA412;
+    border-radius: 50%;
+    margin-right: 2px;
+    display: inline-block;
+}
+
+
+.pause-stop .btn-stop {
+    color: #EB5757;
+    font-weight: 600;
+    border-radius: 8px;
+    background: rgba(255, 175, 175, 0.2);
+}
+
+.pause-stop .btn-stop span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #EB5757;
+    border-radius: 50%;
+    margin-right: 2px;
+    display: inline-block;
+}
+
+.overall-text {
+    color: #151D48;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.overall-timer {
+    font-weight: 400;
+    padding: 8px 20px;
+    border-radius: 4px;
+    background: #D9EBFF;
+}
+
+.performence-queation-icon span {
+    width: 44px;
+    height: 44px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    background: #E2FFF3;
+    display: inline-block;
+}
+
+.performence-queation-text {
+    color: #151D48;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.queation-progress .progress .progress-bar {
+    background-color: #3CD856;
+}
+
+.queation-progress .counting {
+    top: 50%;
+    right: -43px;
+    font-size: 14px;
+    font-weight: 700;
+    transform: translateY(-50%);
+}
+
+.rigth-wrong-details {
+    height: 120px;
+    border-radius: 8px;
+    background: #ECF1F6;
+    overflow-y: scroll;
+}
+
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #D0D2DA;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #444A6D;
+}
+
+.rigth-wrong-details-text {
+    font-size: 16px;
+    color: #444A6D;
+}
+
+.performence-study-icon {
+    width: 44px;
+    height: 44px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    background: #F0F7FF;
+    display: inline-block;
+}
+
+.queation-difficulty-icon {
+    width: 44px;
+    height: 44px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    background: #FEF6E6;
+    display: inline-block;
+}
+
+.question-difficulty .queation-progress .progress .progress-bar {
+    background-color: #FFA412;
+}
+
+.question-difficulty .queation-progress {
+    margin-right: 70px;
+}
+
+.question-difficulty .queation-progress .counting {
+    right: -65px;
+}
+
+.total-questions .queation-progress .progress .progress-bar {
+    background-color: #0077FF;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
+    #question {
+        height: auto;
+    }
+
+    #question .user-bar {
+        height: 100% !important;
+    }
+
+    .next-previews-btn .btn {
+        width: 110px;
+    }
+
+    .topic-question ul {
+        padding-left: 60px;
+    }
+
+    .choose-question ul {
+        padding-left: 60px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .name-question h4 {
+        color: #151D48;
+        font-size: 16px;
+    }
+
+    .topic-question ul {
+        font-size: 15px;
+        padding-left: 50px;
+    }
+
+    .choose-question ul {
+        font-size: 15px;
+        padding-left: 50px;
+    }
+
+    .next-previews-btn .btn {
+        width: 108px;
+    }
+
+    .question-box {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .overall-text {
+        font-size: 13px;
+    }
+
+    .performence-queation-text {
+        font-size: 10px;
+    }
+
+    .rigth-wrong-details-text {
+        font-size: 13px;
+    }
+
+    .rigth-wrong-details {
+        height: 90px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .question-box {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .name-question h4 {
+        font-size: 14px;
+    }
+
+    .topic-question {
+        padding: 8px 0 !important;
+    }
+
+    .choose-question {
+        padding: 8px 0 !important;
+    }
+
+    .choose-question ul il {
+        padding: 4px 0 !important;
+    }
+
+    .next-previews-btn .btn {
+        width: 180px;
+        height: 40px;
+    }
+
+    .next-previews-btn {
+        padding-top: 20px;
+    }
+
+    .overall-text {
+        font-size: 14px;
+    }
+
+    .performence-queation-text {
+        font-size: 14px;
+    }
+
+    .rigth-wrong-details {
+        height: 74px;
+    }
+
+    .rigth-wrong-details-text {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .question-box {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    .name-question {
+        padding-bottom: 15px !important;
+    }
+
+    .name-question h4 {
+        font-size: 16px;
+    }
+
+    .topic-question {
+        padding: 10px 0 !important;
+    }
+
+    .choose-question {
+        padding: 10px 0 !important;
+    }
+
+    .next-previews-btn {
+        padding-top: 20px;
+    }
+
+    .performence-queation-text {
+        font-size: 15px;
+    }
+
+    .rigth-wrong-details {
+        height: 80px;
+    }
+}
